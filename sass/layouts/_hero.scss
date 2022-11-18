@@ -1,11 +1,69 @@
-.hero {
+.hero__container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width:320px) {
+        width: 320px;
+    }
+
+    @media screen and (min-width:768px) {
+        width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+        padding-left: 142px;
+    }
+        background-image: url(../images/aaa/fon-hero.png),
+        url(../images/aaa/bg-mob.jpg);
+    
+        background-repeat: no-repeat;
+    
+        background-size: cover;
+        background-position: center;
+    
+        padding-top: 180px;
+        padding-bottom: 127px;
+    
+    
+        @include retina {
+            background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-mob-2x.jpg);
+        }
+    
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/aaa/fon-hero.png), url(../images/aaa/bg-tab.jpg);
+            padding-top: 154px;
+            padding-bottom: 328px;
+    
+            @include retina {
+                background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-tab-2x.jpg);
+            }
+        }
+    
+        @media screen and (min-width: 1280px) {
+            background-image: url(../images/aaa/fon-hero.png), url(../images/aaa/bg-desk.jpg);
+            padding-top: 180px;
+            padding-bottom: 329px;
+    
+            @include retina {
+                background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-desk-2x.jpg);
+            }
+        }
+}
+
+/*.hero{
      
-    background-image: url(../images/aaa/fon-hero.png), url(../images/aaa/bg-mob.jpg);
+    background-image:  url(../images/aaa/fon-hero.png), url(../images/aaa/bg-mob.jpg);
     
     background-repeat: no-repeat;
+    
+    background-size:  cover;
     background-position: center;
-    background-size: cover;
-   
+    
     padding-top: 180px;
     padding-bottom: 127px;
     
@@ -30,7 +88,7 @@
             background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-desk-2x.jpg);
         }
     }
-}
+}*/
 
 .hero__title {
 
