@@ -4,8 +4,8 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @media screen and (min-width:320px) {
-        width: 320px;
+    @media screen and (min-width:480px) {
+        width: 480px;
     }
 
     @media screen and (min-width:768px) {
@@ -18,41 +18,70 @@
         width: 1280px;
         padding-left: 142px;
     }
-        background-image: url(../images/aaa/fon-hero.png),
+
+        background-image: url(../images/aaa/img1-mob.png), url(../images/aaa/img2-mob.png), url(../images/aaa/img3-mob.png), url(../images/aaa/fon-hero.png),
         url(../images/aaa/bg-mob.jpg);
     
-        background-repeat: no-repeat;
-    
-        background-size: cover;
-        background-position: center;
+        background-repeat: no-repeat;    
+        background-size: 100px, 180px, 95px, 900px, cover;
+        background-position: top 57px left 16px, top -50px right 1px, top 394px right 140px, top -100px left -350px, center;
     
         padding-top: 180px;
         padding-bottom: 127px;
     
     
-        @include retina {
-            background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-mob-2x.jpg);
+            @media (min-device-pixel-ratio: 2),
+                   (min-resolution: 192dpi),
+                   (min-resolution: 2dppx) {
+            background-image: url(../images/aaa/img1-mob-2x.png),
+                              url(../images/aaa/img2-mob-2x.png),
+                              url(../images/aaa/img3-mob-2x.png),
+                              url(../images/aaa/fon-hero-2x.png),
+                              url(../images/aaa/bg-mob-2x.jpg);
+
         }
     
-        @media screen and (min-width: 768px) {
-            background-image: url(../images/aaa/fon-hero.png), url(../images/aaa/bg-tab.jpg);
+    @media screen and (min-width: 768px) {
+            background-image: url(../images/aaa/img1-tab.png), url(../images/aaa/img2-tab.png), url(../images/aaa/img3-tab.png), url(../images/aaa/fon-hero.png), url(../images/aaa/bg-tab.jpg);
+            
+            background-repeat: no-repeat;
+            background-size: 150px, 220px, 143px, 1100px, cover;
+            background-position: top 49px right 166px, top 226px right 19px, top 479px left 421px, top -60px left -250px, center;
+
             padding-top: 154px;
             padding-bottom: 328px;
     
-            @include retina {
-                background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-tab-2x.jpg);
+            @media (min-device-pixel-ratio: 2),
+                   (min-resolution: 192dpi),
+                   (min-resolution: 2dppx) {
+             background-image: url(../images/aaa/img1-tab-2x.png),
+                               url(../images/aaa/img2-tab-2x.png),
+                               url(../images/aaa/img3-tab-2x.png),
+                               url(../images/aaa/fon-hero-2x.png),
+                               url(../images/aaa/bg-tab-2x.jpg);
             }
-        }
+    }
     
-        @media screen and (min-width: 1280px) {
-            background-image: url(../images/aaa/fon-hero.png), url(../images/aaa/bg-desk.jpg);
+    @media screen and (min-width: 1280px) {
+            background-image: url(../images/aaa/img1-desk.png), url(../images/aaa/img2-desk.png), url(../images/aaa/img3-desk.png), url(../images/aaa/fon-hero.png), url(../images/aaa/bg-desk.jpg);
+            
+            background-repeat: no-repeat;
+            background-size: 180px, 300px, 270px, 1220px, cover;
+            background-position: top 75px left 630px, top 155px right 110px, bottom 203px left 600px, top -100px left 50%, center;
+
             padding-top: 180px;
             padding-bottom: 329px;
     
-            @include retina {
-                background-image: url(../images/aaa/fon-hero-2x.png), url(../images/aaa/bg-desk-2x.jpg);
+            @media (min-device-pixel-ratio: 2),
+                   (min-resolution: 192dpi),
+                   (min-resolution: 2dppx) {
+             background-image: url(../images/aaa/img1-desk-2x.png),
+                               url(../images/aaa/img2-desk-2x.png),
+                               url(../images/aaa/img3-desk-2x.png),
+                               url(../images/aaa/fon-hero-2x.png),
+                               url(../images/aaa/bg-desk-2x.jpg);
             }
-        }
+    }
 }
 
 /*.hero{
