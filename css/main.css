@@ -355,23 +355,19 @@ button {
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  background-color: #01383A;
+  filter: drop-shadow(0 4px 50px rgba(94, 236, 54, 0.5));
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--contrast-color);
-}
-
-.logo--dark {
-  color: var(--text-logo-color);
-}
-
-.logo--light {
-  color: var(--secondary-color);
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  width: 115px;
 }
 
 .nav__link {
@@ -454,10 +450,13 @@ button {
   margin-right: 10px;
 }
 
+.menu-open-btn__icon {
+  fill: #86E543;
+}
+
 .menu-open-btn {
   margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: auto;
   border: none;
   background-color: transparent;
 }
